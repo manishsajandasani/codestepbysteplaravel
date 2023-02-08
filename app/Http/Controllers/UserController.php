@@ -6,8 +6,8 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    function show($name)
+    function showUserID($userID)
     {
-        return "This is UserController Show Method " . $name;
+        return view("users", ["userID" => $userID]);
     }
 }
