@@ -14,10 +14,10 @@ use App\Http\Controllers\UserController;
 |
 */
 
-// Passing data to the view file directly without any controller
-Route::get("/{id}", function ($id) {
-    return view("home", ["id" => $id]);
+Route::get("/", function () {
+    return view("home");
 });
 
-// Passing data to the view file with the help of controller
-Route::get("/users/{userID}", [UserController::class, "showUserID"]);
+Route::get("/about", function () {
+    return view("about");
+});

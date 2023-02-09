@@ -1,3 +1,7 @@
+<x-header title="home-page-header" />
 <h1>
-   ID is {{$id}}
+   Home Page
 </h1>
+<h3>
+   Previous Page was {{URL::previous()}}
+</h3>

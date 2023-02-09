@@ -4,7 +4,7 @@ namespace App\View\Components;
 
 use Illuminate\View\Component;
 
-class Header extends Component
+class header extends Component
 {
     /**
      * Create a new component instance.
@@ -13,9 +13,9 @@ class Header extends Component
      */
 
     public $title = "";
-    public function __construct($componentName)
+    public function __construct($title)
     {
-        $this->title = $componentName;
+        $this->title = $title;
     }
 
     /**
