@@ -6,8 +6,9 @@ use Illuminate\Http\Request;
 
 class UserController extends Controller
 {
-    function showUserID($userID)
+    function submitUserForm(Request $req)
     {
-        return view("users", ["userID" => $userID]);
+        echo $req->input('_token') . "<br>";
+        print_r($req->input());
     }
 }
